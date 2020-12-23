@@ -111,7 +111,7 @@ int findQuantutyOfElem(int *arr[], int nSize, int mSize){
 
         for(int j = 1; j < mSize - 1; j++){
 
-            if(arr[i][j] < arr[i][j - 1] && arr[i][j] < arr[i][j + 1]){
+            if(arr[i][j] < arr[i][j - 1] && arr[i][j] > arr[i][j + 1]){
                 counter++;
             }
          }
